@@ -1,0 +1,217 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/default.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@vime/core@^5/themes/light.css"
+    />
+</head>
+<body>
+    <nav>
+
+    </nav>
+
+    <main>
+        <section>
+            <div class="container violeta">
+                <div class="presentacion txt-blanco">
+                    <p>
+                        “Lo aprendimos así” es una colección de materiales didácticos multimodales que tiene como objetivo hacer visibles los procesos de pensamiento, cognitivos e intersubjetivos/sociales, y estrategias de resolución que los niños y las niñas hacen evidentes mediante las acciones de explicar, narrar, jugar, contar, leer a partir de una consigna proporcionada con anterioridad.
+                    </p>
+                    <p>
+                        Cada capítulo de esta colección tiene como eje principal un conjunto de registros audiovisuales de escenas escolares. En torno a ellos gravitan otros contenidos expresados en diferentes lenguajes que los precisan, amplían o analizan y que están vinculados tanto con cuestiones conceptuales y procedimentales de la disciplina como con una serie de indicaciones para poder leer en clave pedagógica y didáctica las escenas escolares que se muestran.
+                    </p>
+                    <p>
+                        La colección ofrece múltiples posibilidades de selección, resignificación e implementación en las aulas del nivel de Educación Superior para el tratamiento de cuestiones de orden pedagógico, didáctico y disciplinar.
+                    </p>
+                    <p>
+                        "Aprendimos así a contar" es el nombre de este primer capítulo. Bienvenidos y bienvenidas.
+                    </p>
+                    <div>
+                        <a class="btn-comenzar centrado" href="#portada">Comenzar</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="portada">
+            <div class="video-container" onclick="myFunction()">
+              <video autoplay muted loop id="videoUno" >
+                <source src="video/01-exterior.mp4" type="video/mp4" />
+              </video>
+              
+              <div class="caption">
+                <div class="caja-texto txt-blanco">
+                  <img class="logo" src="https://loaprendimosasi.my.canva.site/images/6c70f011509b81d2789401a1f69ea24f.png" alt="">
+                   <p>Scrollea para continuar</p>
+                   <audio loop autoplay>
+                    <source src="assets/airtone-treetone.mp3">
+                   </audio>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section id="esquema">
+            <div class="container gris">
+                <div>
+                    <figure>
+                        <img class="img-esquema" src="img/esquema.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="conteo" class="parallax conteo">
+            <div style="align-self: center; justify-content: center;">
+                <div>
+                    <figure>
+                        <img src="img/circulo-flecha.png" alt="">
+                    </figure>
+                </div>
+                <div>
+                    <h1>El Conteo</h1>
+                </div>
+                
+            </div>
+            <div class="caja abajo-derecha txt-violeta">
+                <h2>
+                    “No es el mismo dibujo,<br/>
+                    pero sí el mismo número”.
+                </h2>
+                <p>
+                    Saber recitar la serie no es lo mismo que saber
+contar los elementos de una colección.
+                </p>
+            </div>
+        </section>
+        <section id="video">
+            <div>
+                <vm-player>
+                    <vm-video cross-origin="true" poster="">
+                      <source data-src="video/02-intro.mp4" type="video/mp4" />
+                      <track
+                        default
+                        kind="subtitles"
+                        src=""
+                        srclang="en"
+                        label="English"
+                      />
+                    </vm-video>
+                    <vm-default-ui no-click-to-play>
+                    </vm-default-ui>
+                  </vm-player>
+            </div>
+        </section>
+
+        <section>
+            <div>
+
+            </div>
+        </section>
+    
+    
+        
+    </main>
+    <!-- Aviso de giro dispositivo -->
+    <section id="aviso-giro">
+        <div class="container violeta">
+            <div>
+                <h1><i class="bi bi-arrow-counterclockwise"></i></h1>
+                <p>Gire el dispositivo</p>
+            </div>
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+
+
+    <div class='debug'></div>
+    
+    <!-- autoplay audio -->
+
+
+     <script>
+
+      var audioElem = document.querySelector("audio");
+      let playAttempt = setInterval(() => {
+        audioElem
+          .play()
+          .then(() => {
+            clearInterval(playAttempt);
+          })
+          .catch((error) => {
+            console.log("Unable to play the video, User has not interacted yet.");
+          });
+      }, 1000);
+     </script>
+
+
+
+    <!-- Vime video player -->
+    <script
+        type="module"
+        src="https://cdn.jsdelivr.net/npm/@vime/core@^5/dist/vime/vime.esm.js"
+    ></script>
+
+    <!-- Intersection observer -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- Scrollama -->
+    <script src="https://unpkg.com/scrollama"></script>
+    <script>
+    // using d3 for convenience
+    var main = document.querySelector("main");
+    var scrolly = main.querySelector("#scrolly");
+    var sticky = scrolly.querySelector(".sticky-thing");
+    var article = scrolly.querySelector("aside");
+    var steps = article.querySelectorAll(".step");
+
+    // initialize the scrollama
+    var scroller = scrollama();
+
+    // scrollama event handlers
+    function handleStepEnter(response) {
+    // response = { element, direction, index }
+    var el = response.element;
+
+    // remove is-active from all steps
+    // then add is-active to this step
+    steps.forEach(step => step.classList.remove('is-active'));
+    el.classList.add('is-active');
+
+    // update graphic based on step
+    sticky.querySelector("p").innerText = el.dataset.step;
+    sticky.style.backgroundSize = el.dataset.size;
+    sticky.style.backgroundPosition = el.dataset.position;
+  }
+
+  function init() {
+    // 2. setup the scroller passing options
+    // 		this will also initialize trigger observations
+    // 3. bind scrollama event handlers (this can be chained like below)
+    scroller
+      .setup({
+        step: "#scrolly aside .step",
+        offset: 0.6,
+        debug: false
+      })
+      .onStepEnter(handleStepEnter);
+
+    // setup resize event
+    window.addEventListener("resize", scroller.resize);
+    }
+
+    // kick things off
+    init();
+    </script>
+</body>
+</html>
