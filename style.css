@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Sauna Pro';
+}
+
+/* PALETA */
+
+:root {
+  --color1: #393756;
+  --color2: #DA455A;
+  --color3: #FAFAFA;
+  --color4: #F5F5F5;
+  --color5: #86BCFB;
+  --fondo: #efece1;
+  --negro: #161615;
+} 
+
+.txt-violeta {
+  color: var(--color1);
+}
+
+.txt-blanco {
+  color: var(--color3)
+}
+
+  /* Aviso de rotacion de pantalla */
+
+  #aviso-giro {
+    height: 100vh;
+  }
+  
+  @media screen and (orientation: landscape) {
+   #aviso-giro {
+      display: none;
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    main {
+      display: none;
+    }
+  }
+
+html,
+body {
+  word-wrap: break-word
+
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 1280px;
+  color: #3b3b3b;
+  background-color: var(--color3);
+  font-size: 24px;
+}
+
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:hover {
+  color: var(--color2);
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+audio {
+  opacity: 0.6;
+  /* transform: rotate(5deg); */
+  /* filter:invert(0.4); */
+}
+
+
+.btn-comenzar {
+  background-color: var(--color2);
+  color: white;
+  border: 0px solid;
+  border-radius: 15px;
+  padding: 0.4em 3em;
+  line-height: 4em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 1.3em;
+  font-weight: 600;
+  align-self: center;
+}
+
+.btn-comenzar:hover {
+  background-color: var(--color4);
+  color: var(--color1);
+}
+
+.gris {
+  background-color: var(--color4);
+}
+.violeta {
+  background-color: var(--color1);
+  color: white;
+}
+
+.vh100 {
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80vw;
+  margin: auto;
+}
+
+.flex-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-80vw {
+  width: 800px;
+  max-width: 80vw;
+  margin: auto;
+  gap: 0.5em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#intro {
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color1);
+  color: var(--color3);
+  gap: 1em;
+}
+
+
+
+#outro {
+
+  height: 100vh;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+
+
+#scrolly {
+  position: relative;
+  background-color: var(--color3);
+  padding: 0rem;
+}
+
+article {
+  position: relative;
+  padding: 0;
+  max-width: 30rem;
+  left: 50%;
+}
+
+/* ACA SE CAMBIAN LAS IMAGENES */
+
+#sticky-thing1 {
+  background-image: url(img/collage-conteo1.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+ 
+  transition: 2s;
+}
+
+#sticky-thing2 {
+  background-image: url(img/chacabuco-subercaseaux.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+ 
+  transition: 2s;
+}
+
+/* HASTA ACA SE CAMBIAN LAS IMAGENES */
+
+
+.sticky-general {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: var(--color3);
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: 0;
+  top: 0vh;
+  height: 100vh; 
+}
+
+
+.sticky-general p {
+  padding-left: 15vh;
+  padding-top: 15vh;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  filter: drop-shadow(5px 5px 5px #05050566);
+  transition: 1s;
+}
+
+.step {
+  margin: 0 auto 90vh auto;
+  background-color: #ffffff22;
+  border: 2px solid var(--color1);
+  border-radius: 25px;
+  transition: 1s;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+.step.is-active {
+  
+  background-color: var(--color4);
+  border: 2px solid var(--color1);
+  transition: 1s;
+
+  
+}
+
+.step.is-active p {
+  color: var(--color1);
+}
+
+.step p {
+  text-align: left;
+  padding: 1.5em;
+  font-size: 1rem;
+  color: var(--color1);
+}
+
+
+
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: var(--color1); /* Black fallback color */
+  opacity: 0.95;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--color2);
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
