@@ -26,6 +26,11 @@
   color: var(--color3)
 }
 
+.txt-encabezado {
+  font-size: 3em;
+  font-weight: 900;
+}
+
   /* Aviso de rotacion de pantalla */
 
   #aviso-giro {
@@ -46,12 +51,12 @@
 
 html,
 body {
-  word-wrap: break-word
-
+  word-wrap: break-word;
+  width: 100vw;
+  max-width: 100dvw;
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   min-height: 1280px;
   color: #3b3b3b;
   background-color: var(--color3);
@@ -113,16 +118,54 @@ audio {
 
 .vh100 {
     height: 100vh;
-    height: 100dvh;
     width: 100vw;
-    width: 100dvw;
+    overflow: hidden;
 }
 
+video {
+  width: 100vw;
+  object-fit:cover;
+  overflow: hidden;
+}
 
 .mapa {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#conteo {
+  position: relative;
+  background: url(img/collage-conteo1.jpg), linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+}
+#conteo .titulo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+#conteo .cajatexto {
+  border: 2px solid var(--color1);
+  border-radius: 1em;
+  background-color: var(--color3);
+  padding: 1em;
+  color: var(--color1);
+  position: absolute;
+  font-size: 1.2rem;
+  top: 65%;
+  left: 90%;
+  transform: translateX(-100%);
+  width: 400px;
+  max-width:40vw;
+  max-width: 40vw;
 }
 
 .container {
@@ -166,13 +209,6 @@ audio {
 
 
 
-#outro {
-
-  height: 100vh;
-  margin: 1rem auto;
-  text-align: center;
-}
-
 
 
 #scrolly {
@@ -185,7 +221,7 @@ article {
   position: relative;
   padding: 0;
   max-width: 30rem;
-  left: 50%;
+  left: 40%;
 }
 
 /* ACA SE CAMBIAN LAS IMAGENES */
@@ -261,7 +297,7 @@ article {
 .step p {
   text-align: left;
   padding: 1.5em;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--color1);
 }
 
@@ -272,6 +308,7 @@ article {
 .overlay {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */   
   height: 100%;
+  z-index: 6;
   width: 0;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -358,9 +395,25 @@ article {
 .modal-content {
   position: relative;
   top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
+  width: 90%; /* 100% width */
+  height: 800px;
+  max-height: 70dvh;
+  overflow-y: scroll;
+  text-align: left; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin: auto;
+}
+.modal-content p {
+  margin-bottom: 0.5em;
+}
+
+.modal-content:last-child {
+  margin-bottom: 25vh;
+}
+
+.modal-box {
+  width: 100%;
+  overflow-y: scroll;
 }
 
 /* The navigation links inside the overlay */
@@ -380,9 +433,10 @@ article {
 
 /* Position the close button (top right corner) */
 .modal .closebtn {
-  position: absolute;
+  position: sticky;
+  text-align: end;
   top: 20px;
-  right: 45px;
+  padding-right: 45px;
   font-size: 60px;
 }
 

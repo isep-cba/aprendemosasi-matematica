@@ -21,7 +21,7 @@
   <body>
 
     <!-- MENU OVERLAY -->
-<div id="myNav" class="overlay">
+<div id="myNav" class="overlay" style="z-index: 6;">
 
   <!-- Button to close the overlay navigation -->
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -32,8 +32,7 @@
     <a href="#intro">Intro</a>
     <a href="#mapa">Mapa</a>
     <a href="#s1">Scroll1</a>
-    <a href="#video1">Video</a>
-    <a href="#outro">Outro</a>
+    <a href="#video2">Video full</a>
     <a href="#s2">Scroll2</a>
   </div>
 
@@ -41,7 +40,7 @@
 
 <!-- boton MENU -->
 
-<div style="position: fixed; top: 15px; left: 15px; cursor: pointer; z-index: 99; color: white;";>
+<div style="position: fixed; top: 15px; left: 15px; cursor: pointer; z-index: 2; color: white;";>
   <!-- Use any element to open/show the overlay navigation menu -->
   <p onclick="openNav()">Mapa</p>
 
@@ -74,8 +73,16 @@
       </div>
     </section>
 
+    <div id="intro" class="vh100"> 
+      
+      <video controls loop class="audioscroll vh100">
+        <source src="video/01-exterior.mp4">
+      </video>
 
-      <section id="intro">
+    </div> 
+
+<!-- PORTADA CON TEXTO Y AUDIO
+      <section>
         <h1>Aprendí así</h1>
         <p>
           A contar
@@ -85,16 +92,21 @@
           Your browser does not support the audio tag.
         </audio>
         <div>
-          <!-- 
-          <button id="play-button">Play</button>
-          <button id="pause-button">Pause</button>
-           -->
+       
           
 
           <p style="rotate: 90deg;">>></p>
         </div>
         
       </section>
+
+      -->
+
+   <!-- BOTONES CUSTOM DE PLAY PAUSA 
+          <button id="play-button">Play</button>
+          <button id="pause-button">Pause</button>
+           -->
+
 
       <section id="mapa" class="vh100 mapa">
         
@@ -104,13 +116,25 @@
         
       </section>
 
-      <div id="video1" class="vh100"> 
+      <section id="conteo" class="vh100">
+        <div class="titulo">
+          <img src="img/circulo-flecha.png" alt="">
+          <h1 class="txt-violeta txt-encabezado">El conteo</h1>
+          
+        </div>
+        <div class="cajatexto">
+          <h2>
+            “No es el mismo dibujo, pero sí el mismo número”.
+          </h2>
+          <p>
+            Saber recitar la serie no es lo mismo que saber contar los elementos de una colección.
+          </p>
+        </div>
+        
       
-        <video controls loop class="audioscroll vh100">
-          <source src="video/01-exterior.mp4">
-        </video>
-  
-      </div> 
+      </section>
+
+      
 
       <section id="s1">
         <div class="scrolly">
@@ -150,7 +174,7 @@
         </div>
       </section>
 
-    <div id="outro" class="vh100"> 
+    <div id="video2" class="vh100"> 
       
       <video controls loop class="audioscroll vh100">
         <source src="video/01-exterior.mp4">
@@ -214,7 +238,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeMod1()">&times;</a>
   
     <!-- Overlay content -->
-    <div class="overlay-content">
+    <div class="modal-content">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
       </p>
