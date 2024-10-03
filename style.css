@@ -60,7 +60,6 @@ body {
   min-height: 1280px;
   color: #3b3b3b;
   background-color: var(--color3);
-  font-size: 24px;
 }
 
 
@@ -81,12 +80,19 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  font-size: 1.3em;
+}
+
 audio {
   opacity: 0.6;
   /* transform: rotate(5deg); */
   /* filter:invert(0.4); */
 }
 
+.p-center {
+  margin: auto;
+}
 
 .btn-comenzar {
   background-color: var(--color2);
@@ -98,9 +104,7 @@ audio {
   text-align: center;
   text-decoration: none;
   transition: 0.2s;
-  font-size: 1.3em;
   font-weight: 600;
-  align-self: center;
 }
 
 .btn-comenzar:hover {
@@ -159,7 +163,6 @@ video {
   padding: 1em;
   color: var(--color1);
   position: absolute;
-  font-size: 1.2rem;
   top: 65%;
   left: 90%;
   transform: translateX(-100%);
@@ -190,10 +193,7 @@ video {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
 }
-
-
 
 #intro {
   height: 100vh;
@@ -230,7 +230,6 @@ article {
   background-image: url(img/collage-conteo1.jpg);
   background-size: 100%;
   background-position: 50% 50%;
- 
   transition: 2s;
 }
 
@@ -238,7 +237,6 @@ article {
   background-image: url(img/sanlorenzo-dellavalle.jpg);
   background-size: 100%;
   background-position: 50% 50%;
- 
   transition: 2s;
 }
 
@@ -261,8 +259,8 @@ article {
 .sticky-general p {
   padding-left: 15vh;
   padding-top: 15vh;
-  font-size: 2rem;
   font-weight: 900;
+  font-size: 2em;
   color: var(--color1);
   filter: drop-shadow(5px 5px 5px #05050566);
   transition: 1s;
@@ -297,7 +295,6 @@ article {
 .step p {
   text-align: left;
   padding: 1.5em;
-  font-size: 1.3rem;
   color: var(--color1);
 }
 
