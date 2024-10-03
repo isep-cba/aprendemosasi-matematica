@@ -391,22 +391,19 @@ article {
 /* Position the content inside the overlay */
 .modal-content {
   position: relative;
-  top: 25%; /* 25% from the top */
   width: 90%; /* 100% width */
+  top: 80px;
   height: 800px;
   max-height: 70dvh;
   overflow-y: scroll;
   text-align: left; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: 60px; /* 30px top margin to avoid conflict with the close button on smaller screens */
   margin: auto;
 }
 .modal-content p {
   margin-bottom: 0.5em;
 }
 
-.modal-content:last-child {
-  margin-bottom: 25vh;
-}
 
 .modal-box {
   width: 100%;
