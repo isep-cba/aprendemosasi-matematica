@@ -73,9 +73,7 @@ a {
 a,
 a:visited,
 a:hover {
-  color: var(--color2);
   text-decoration: none;
-  border-bottom: 2px solid currentColor;
 }
 
 audio {
@@ -116,8 +114,10 @@ audio {
 .vh100 {
     height: 100vh;
     height: 100dvh;
-    width: 100%;
+    width: 100vw;
+    width: 100dvw;
 }
+
 
 .mapa {
   display: flex;
@@ -199,7 +199,7 @@ article {
 }
 
 #sticky-thing2 {
-  background-image: url(img/chacabuco-subercaseaux.jpg);
+  background-image: url(img/sanlorenzo-dellavalle.jpg);
   background-size: 100%;
   background-position: 50% 50%;
  
@@ -227,7 +227,7 @@ article {
   padding-top: 15vh;
   font-size: 2rem;
   font-weight: 900;
-  color: #fff;
+  color: var(--color1);
   filter: drop-shadow(5px 5px 5px #05050566);
   transition: 1s;
 }
@@ -261,7 +261,7 @@ article {
 .step p {
   text-align: left;
   padding: 1.5em;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--color1);
 }
 
@@ -287,7 +287,8 @@ article {
 .overlay-content {
   position: relative;
   top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
+  width: 900px; /* 100% width */
+  max-width: 90%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
@@ -319,6 +320,76 @@ article {
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.link-principio {
+  font-weight: 800;
+  cursor: help;
+  margin: 0px;
+}
+
+.link-principio:hover {
+  color: var(--color2) !important;
+}
+
+/* MODAL PRINCIPIOS */
+
+/* The Overlay (background) */
+.modal {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: var(--color3); /* Black fallback color */
+  opacity: 0.95;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.modal-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.modal a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: var(--color2);
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.modal a:hover, .modal a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.modal .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .modal a {font-size: 20px}
+  .modal .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;

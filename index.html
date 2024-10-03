@@ -28,8 +28,11 @@
 
   <!-- Overlay content -->
   <div class="overlay-content">
+    <a href="#presentacion">Presentacion</a>
+    <a href="#intro">Intro</a>
+    <a href="#mapa">Mapa</a>
     <a href="#s1">Scroll1</a>
-    <a href="#videofull">Video</a>
+    <a href="#video1">Video</a>
     <a href="#outro">Outro</a>
     <a href="#s2">Scroll2</a>
   </div>
@@ -48,7 +51,7 @@
 <main>
 
 
-    <section class="vh100 p2 violeta">
+    <section id="presentacion" class="vh100 p2 violeta">
       <div class="flex-container">
         <div class="flex-80vw">
           <p>
@@ -93,7 +96,7 @@
         
       </section>
 
-      <section class="vh100 mapa">
+      <section id="mapa" class="vh100 mapa">
         
           <figure>
             <img class="img-fluid" src="img/diagrama.png" alt="">
@@ -101,9 +104,9 @@
         
       </section>
 
-      <div id="outro" style="width: 100%; margin: 0; align-items: center; justify-content: center; line-height: 2em; padding-top: 15vh; color: beige; background-color: black;"> 
+      <div id="video1" class="vh100"> 
       
-        <video controls loop class="audioscroll">
+        <video controls loop class="audioscroll vh100">
           <source src="video/01-exterior.mp4">
         </video>
   
@@ -120,7 +123,7 @@
               <p>
                 Un niño que puede recitar la serie hasta un determinado número no necesariamente podrá utilizar ese conocimiento a la hora de contar objetos o dibujos para decir cuántos hay. 
               </p>
-            
+              <p class="link-principio" onclick="openMod1()">Principio de cardinalidad</p>
               
             </div>
             <div class="step" data-step="Antecedentes" data-size="180%" data-position="80% 50%">
@@ -147,9 +150,9 @@
         </div>
       </section>
 
-    <div id="outro" style="width: 100%; margin: 0; align-items: center; justify-content: center; line-height: 2em; padding-top: 15vh; color: beige; background-color: black;"> 
+    <div id="outro" class="vh100"> 
       
-      <video controls loop class="audioscroll">
+      <video controls loop class="audioscroll vh100">
         <source src="video/01-exterior.mp4">
       </video>
 
@@ -202,6 +205,52 @@
         </article>
       </div>
     </section>
+
+
+   <!-- MENU OVERLAY -->
+   <div id="mod1" class="modal">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMod1()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+      </p>
+      <p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+        </p>
+      </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla ratione, cum et aperiam amet animi exercitationem sequi earum labore illum obcaecati iusto! Est vitae harum odio officiis accusamus consequatur!
+      </p>
+    </div>
+  
+  </div>
+  
+
 
 
     </main>
