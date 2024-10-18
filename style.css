@@ -90,6 +90,13 @@ audio {
   /* filter:invert(0.4); */
 }
 
+#presentacion{
+  background-image: url(img/portada.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .p-center {
   margin: auto;
 }
@@ -140,35 +147,56 @@ video {
 
 #conteo {
   position: relative;
-  background: url(img/collage-conteo1.jpg), linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8));
-  background-blend-mode: overlay;
+  background: url(img/back-conteo.jpg);
   background-position: center;
   background-size: cover;
+  display: flex;
 }
+
+.w50 {
+flex: 1 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.f-centrado {
+  align-self: center;
+  justify-content: center;
+}
+
+.f-start {
+  align-self: flex-start;
+  justify-content: center;
+}
+
+.f-end {
+  align-self: flex-end;
+  justify-content: center;
+  margin-bottom: 20vh;
+}
+
 #conteo .titulo {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1em;
 }
 
-#conteo .cajatexto {
-  border: 2px solid var(--color1);
+.cajatexto {
+  border: 0px solid var(--color1);
   border-radius: 1em;
   background-color: var(--color3);
-  padding: 1em;
+  padding: 2em 1.5em;
   color: var(--color1);
-  position: absolute;
-  top: 65%;
-  left: 90%;
-  transform: translateX(-100%);
   width: 400px;
   max-width:40vw;
   max-width: 40vw;
+  font-size: 1.2em;
+}
+
+.cajatexto h2 {
+  font-weight: 600;
 }
 
 .container {
@@ -215,13 +243,19 @@ video {
   position: relative;
   background-color: var(--color3);
   padding: 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
 }
+
 
 article {
   position: relative;
   padding: 0;
-  max-width: 30rem;
-  left: 40%;
+  width: 30%;
+  margin-right: 15%;
+  margin-left: auto;
 }
 
 /* ACA SE CAMBIAN LAS IMAGENES */
@@ -234,7 +268,7 @@ article {
 }
 
 #sticky-thing2 {
-  background-image: url(img/sanlorenzo-dellavalle.jpg);
+  background-image: url(img/collage-recitar1.jpg);
   background-size: 100%;
   background-position: 50% 50%;
   transition: 2s;
@@ -264,6 +298,7 @@ article {
   color: var(--color1);
   filter: drop-shadow(5px 5px 5px #05050566);
   transition: 1s;
+  display: none;
 }
 
 .step {

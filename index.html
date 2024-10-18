@@ -50,9 +50,9 @@
 <main>
 
 
-    <section id="presentacion" class="vh100 p2 violeta">
+    <section id="presentacion" class="vh100 p2">
       <div class="flex-container">
-        <div class="flex-80vw">
+        <div class="flex-80vw" style="display: none;">
           <p>
             “Lo aprendimos así” es una colección de materiales didácticos multimodales que tiene como objetivo hacer visibles los procesos de pensamiento, cognitivos e intersubjetivos/sociales, y estrategias de resolución que los niños y las niñas hacen evidentes mediante las acciones de explicar, narrar, jugar, contar, leer a partir de una consigna proporcionada con anterioridad.
           </p>
@@ -108,7 +108,7 @@
            -->
 
 
-      <section id="mapa" class="vh100 mapa">
+      <section id="mapa" class="vh100 mapa" style="display: none;">
         
           <figure>
             <img class="img-fluid" src="img/diagrama.png" alt="">
@@ -117,20 +117,22 @@
       </section>
 
       <section id="conteo" class="vh100">
-        <div class="titulo">
-          <img src="img/circulo-flecha.png" alt="">
-          <h1 class="txt-violeta txt-encabezado">El conteo</h1>
-          
+        <div class="w50">
+          <div class="titulo">
+            <img src="img/conteo-icon.png" alt="" style="position: absolute; bottom: 0px; left: 150px; height: 50vh;">
+            <h1 class="txt-violeta txt-encabezado" style="position: absolute; bottom: 45%; left: 390px;">El conteo</h1>
+          </div>
         </div>
-        <div class="cajatexto">
-          <h2>
-            “No es el mismo dibujo, pero sí el mismo número”.
-          </h2>
-          <p>
-            Saber recitar la serie no es lo mismo que saber contar los elementos de una colección.
-          </p>
+        <div class="w50 f-end">
+          <div class="cajatexto">
+            <h2>
+              “No es el mismo dibujo, pero sí el mismo número”.
+            </h2>
+            <p>
+              Saber recitar la serie no es lo mismo que saber contar los elementos de una colección.
+            </p>
+          </div>
         </div>
-        
       
       </section>
 
@@ -141,25 +143,32 @@
           <div class="sticky-general" id="sticky-thing1">
             <p></p>
           </div>
-  
+          
           <article>
-            <div class="step" style="position: 50% 50%;" data-step="La batalla" data-size="110%" data-position="50% 50%">
+            <div class="step" style="position: 50% 50%;" data-step="La batalla" data-size="200%" data-position="0% 100%">
               <p>
                 Un niño que puede recitar la serie hasta un determinado número no necesariamente podrá utilizar ese conocimiento a la hora de contar objetos o dibujos para decir cuántos hay. 
               </p>
               <p class="link-principio" onclick="openMod1()">Principio de cardinalidad</p>
               
             </div>
-            <div class="step" data-step="Antecedentes" data-size="180%" data-position="80% 50%">
+            <div class="step" data-step="Antecedentes" data-size="190%" data-position="100% 10%">
               <p>
                 En el video, vemos que Amaia y Valentina dominan la serie numérica oral de los números, o sea que pueden recitarlos en voz alta, pero dudan sobre cuántos dibujos hay en la carta.
               </p>
             </div>
             
-            <div class="step" data-step="" data-size="180%" data-position="10% 90%">
+            <div class="step" data-step="" data-size="200%" data-position="0% 0%">
               <p>
-                No obstante, para que los niños y las niñas avancen en el dominio del conteo, es importante, entre otras cuestiones, que conozcan el recitado de la serie numérica, lo que constituye una larga conquista.
+                Ante el desconcierto sobre el valor de dos cartas comparadas, Amia y Valen podrían haber decidido contar nuevamente para corroborar iniciando por otro elemento. <br>
+              <br>
+                Por ejemplo, en vez de iniciar por la primera copa de la izquierda arriba, podrían haber iniciado contando desde abajo o, contando los dos elementos del medio y luego los restantes.
               </p>
+            </div>
+
+            <div class="step" data-step="" data-size="180%" data-position="100% 100%">
+              <p>
+                No obstante, para que los niños y las niñas avancen en el dominio del conteo, es importante, entre otras cuestiones, que conozcan el recitado de la serie numérica, lo que constituye una larga conquista.              </p>
               <p>
                 <audio controls class="audioscroll" id="audioscroll">
                   <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
@@ -167,12 +176,36 @@
                 </audio>
               </p>
             </div>
-            <div class="step" data-step="" data-size="180%" data-position="10% 90%"></div>
+            <div class="step" data-step="" data-size="100%" data-position="50% 50%"></div>
 
             </div>
           </article>
         </div>
       </section>
+
+      <section id="conteo" class="vh100">
+        <div class="w50">
+          <div class="titulo">
+            <img src="img/recitar-icon.png" alt="" style="position: absolute; bottom: 0px; left: 150px; height: 100vh;">
+            <h2 class="txt-violeta txt-encabezado" style="position: absolute; bottom: 50%; left: 420px;">Recitar y contar</h2>
+          </div>
+        </div>
+        <div class="w50 f-end">
+          <div class="cajatexto">
+            <h2>
+              ¿Qué saben del recitado estos chicos y estas chicas?
+            </h2>
+            <p>
+              <audio controls class="audioscroll" id="audioscroll">
+                <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+          </div>
+        </div>
+      
+      </section>
+
 
     <div id="video2" class="vh100"> 
       
@@ -191,34 +224,11 @@
         </div>
 
         <article>
-          <div class="step" style="position: 50% 50%;" data-step="La batalla" data-size="110%" data-position="50% 50%">
-            <p>La batalla de Chacabuco fue una decisiva contienda de la Independencia de Chile en la cual combatieron el Ejército de los Andes, formado por tropas de las Provincias Unidas del Río de la Plata y chilenas exiliadas en Mendoza, y el Ejército Realista, resultando en una firme victoria para el bando independentista comandado por el general José de San Martín. La batalla tuvo lugar el 12 de febrero de 1817, en la hacienda de Chacabuco (Colina), a 55 km al norte de la ciudad de Santiago. </p>
-          
-            
-          </div>
-          <div class="step" data-step="Antecedentes" data-size="180%" data-position="80% 50%">
-            <p>Tras el desastre de Rancagua, que causó el fin de la Patria Vieja, los exiliados chilenos se trasladaron a Cuyo, donde se pusieron bajo las órdenes del general José de San Martín, gobernador de la provincia, que había desarrollado un plan para derrotar a los realistas atacando el Virreinato del Perú por mar desde Chile. La ocupación realista de Chile le obligaba a liberar primeramente ese país.</p>
-          </div>
-          <div class="step" data-step="Batalla" data-size="200%" data-position="10% 80%">
-            <p>Tras reunirse el 9 de febrero en el Campamento de Curimón las columnas que cruzaron los Andes por "camino de Los Patos" junto con las que cruzaron por el "camino de Uspallata", se resolvió atacar en la madrugada del día 12. Con el fin de emplear una táctica de pinzas por el frente y la retaguardia, se dividieron a las tropas disponibles en dos:
 
-            </p>
-          </div>
-          <div class="step" data-step="Batalla" data-size="180%" data-position="80% 90%">
-            <p>La 1.ª División o ala derecha al mando de Miguel Estanislao Soler que debía atacar por el oeste, estaba compuesta por los batallones N.º 1 de Cazadores y Nº11, las compañías de Granaderos y Cazadores de los Batallones N.º 7 y N.º 8, el escuadrón N.º 4 de Granaderos, el escuadrón escolta del general en jefe y 7 piezas de artillería de 4" con 80 artilleros de dotación. Ascendía el total de esta columna a 2000 hombres.
-              .</p>
-          </div>
-          <div class="step" data-step="Batalla" data-size="180%" data-position="10% 90%">
-            <p>La 2.ª División o ala izquierda al mando de Bernardo O'Higgins debía atacar por el este; estaba formada por las compañías de fusileros de los batallones 7 y 8, los escuadrones restantes 1.º, 2.º y 3.º de Granaderos a caballo y 2 piezas de artillería (que perderían en el desfiladero) de 4" con el resto del batallón de artillería. Ascendía el total de esta columna a 1500 hombres.</p>
-          </div>
-          <div class="step" data-step=" " data-size="190%" data-position="80% 50%">
-            <p>Mientras Soler rodeaba a los realistas por el camino de Montenegro, más suave pero mucho más largo, O'Higgins lo hacía por Cuesta Vieja, más corto pero en pendiente y mucho más peligroso, dirigiéndose en dos columnas, y enfrentándose con los adelantados realistas hasta encontrarse frente a frente con el grueso del ejército realista, por lo que decidió avanzar hacia el cerro Los Halcones y desplegar allí sus fuerzas, al tiempo que despachaba un mensajero para informar de la situación al general San Martín.
-
-            </p>
-          </div>
-          <div class="step" data-step="" data-size="180%" data-position="10% 90%" style="padding-bottom: 30vh;">
-            <p>Las fuerzas realistas, inferiores en número, estaban compuestas por el batallón Talavera, de soldados peninsulares, más otros dos provenientes principalmente de Chiloé y Valdivia.nota 7​ Inicialmente Maroto, consciente de la debilidad de sus tropas había conseguido que el gobernador apoyase la idea de retirarse al Maule y unir sus fuerzas a las de Concepción para presentar batalla a San Martín.10​ Pero Marco del Pont cambio de opinión rápidamente y le ordenó impedir que los republicanos avanzaran sobre Santiago. El general realista escogió la cuesta de Chacabuco como una posición defensiva, esperando detener a los patriotas mientras llegaban los refuerzos desde el sur.11​ Sin embargo, en un reconocimiento efectuado el día 12 Maroto notó que la cuesta estaba ocupada por los patriotas, e incapaz de tomarla tuvo que escoger entre retroceder a Colina o defender las posiciones donde estaba su ejército, delante del cerro de Victoria, cerca de la Hacienda de Chacabuco. Optó por esto último, lo que permitió a San Martín rodearlo con sus fuerzas más numerosas.12​
-            </p>
+          <div class="step" data-step="La batalla" data-size="200%" data-position="0% 100%">
+            <p>
+              Algunos niños pequeños de sala de 3 años reconocen, con ayuda de la docente, el inicio de la serie: siempre empezamos a contar desde el uno.
+            </p> 
             <p>
               <audio controls>
                 <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
@@ -226,6 +236,48 @@
               </audio>
             </p>
           </div>
+
+          <div class="step" data-step="La batalla" data-size="200%" data-position="100% 100%">
+            <p>
+              Vemos que se aproximan a las palabras-número de fragmentos de la serie: 
+            <br>
+              Algunos aún no las dicen convencionalmente, aunque se parecen bastante…
+            </p> 
+            <p>
+              <audio controls>
+                <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+          </div>
+
+          <div class="step" data-step="La batalla" data-size="200%" data-position="100% 0%">
+            <p>
+              Otros las dicen convencionalmente y en forma ordenada, pero solo de un tramo de la serie.
+            </p> 
+            <p>
+              <audio controls>
+                <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+          </div>
+
+          <div class="step" data-step="La batalla" data-size="200%" data-position="0% 0%">
+            <p>
+              Este dominio limitado de la serie supone que algunos recurran a reiterar el fragmento que ya conocen de números para poder sostener más tiempo el recitado en el juego.
+            </p> 
+            <p>
+              <audio controls>
+                <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+          </div>
+
+            <div class="step" data-step="" data-size="100%" data-position="50% 50%"></div>
+
+
         </article>
       </div>
     </section>
