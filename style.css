@@ -91,7 +91,7 @@ audio {
 }
 
 #presentacion{
-  background-image: url(img/portada.jpg);
+  background-image: url(img/portada-fondo.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,6 +117,24 @@ audio {
 .btn-comenzar:hover {
   background-color: var(--color4);
   color: var(--color1);
+}
+
+.btn-acercade {
+  background-color: var(--color4);
+  color: var(--color1);
+  border: 0px solid;
+  border-radius: 15px;
+  padding: 0.4em 3em;
+  line-height: 4em;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+  font-weight: 600;
+}
+
+.btn-acercade:hover {
+  background-color: var(--color1);
+  color: var(--color4);
 }
 
 .gris {

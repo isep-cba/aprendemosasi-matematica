@@ -42,7 +42,7 @@
 
 <div style="position: fixed; top: 15px; left: 15px; cursor: pointer; z-index: 2; color: white;";>
   <!-- Use any element to open/show the overlay navigation menu -->
-  <p onclick="openNav()">Mapa</p>
+   <img src="img/menu.png" alt="menu" onclick="openNav()" style="width: 30px;">
 
 </div>
 
@@ -52,22 +52,40 @@
 
     <section id="presentacion" class="vh100 p2">
       <div class="flex-container">
-        <div class="flex-80vw" style="display: none;">
-          <p>
-            “Lo aprendimos así” es una colección de materiales didácticos multimodales que tiene como objetivo hacer visibles los procesos de pensamiento, cognitivos e intersubjetivos/sociales, y estrategias de resolución que los niños y las niñas hacen evidentes mediante las acciones de explicar, narrar, jugar, contar, leer a partir de una consigna proporcionada con anterioridad.
-          </p>
-          <p>
-            Cada capítulo de esta colección tiene como eje principal un conjunto de registros audiovisuales de escenas escolares. En torno a ellos gravitan otros contenidos expresados en diferentes lenguajes que los precisan, amplían o analizan y que están vinculados tanto con cuestiones conceptuales y procedimentales de la disciplina como con una serie de indicaciones para poder leer en clave pedagógica y didáctica las escenas escolares que se muestran.
-          </p>
-          <p>
-            La colección ofrece múltiples posibilidades de selección, resignificación e implementación en las aulas del nivel de Educación Superior para el tratamiento de cuestiones de orden pedagógico, didáctico y disciplinar.
-          </p>
-          <p>
-            "Aprendimos así a contar" es el nombre de este primer capítulo. Bienvenidos y bienvenidas.
-          </p>
-          <p class="p-center">
-            <a class="btn-comenzar" href="#intro">Comenzar</a>
-          </p>
+        
+        
+        
+        <div style=" width: 600px;
+        max-width: 70vw;
+        margin: auto;
+        gap: 0.5em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;">
+
+          <div style="position: relative;">
+            <img src="img/portada-marca.png" style="width: 90%;" alt="">
+            <img src="img/portada-nena.png" style="position: absolute; right: -150px; top: 100px;" alt="">
+          </div>
+          <div style="width: 90%; padding-right: 50px; gap: 2em;">
+            <p>
+              Aprendemos a contar recorriendo un largo camino de pequeños aprendizajes. 
+            </p>
+            <br>
+            <p>
+              A partir de este recurso, les proponemos observar y analizar las diferentes estrategias que los niños utilizan durante el aprendizaje del conteo. De este modo, buscamos hacer visible todo aquello que subyace a nuestra práctica profesional de todos los días. 
+            </p>
+            <div style="display: flex; justify-items: center; flex-wrap: wrap; justify-content: space-around;">
+              <p>
+                <a class="btn-acercade" href="#intro">Acerca de</a>
+              </p>
+              <p>
+                <a class="btn-comenzar" href="#intro">Comenzar</a>
+              </p>  
+            </div>
+            
+          </div>
+          
         </div>
         
       </div>
@@ -256,7 +274,7 @@
               Otros las dicen convencionalmente y en forma ordenada, pero solo de un tramo de la serie.
             </p> 
             <p>
-              <audio controls>
+              <audio controls class="audioscroll" >
                 <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
               </audio>
@@ -268,7 +286,7 @@
               Este dominio limitado de la serie supone que algunos recurran a reiterar el fragmento que ya conocen de números para poder sostener más tiempo el recitado en el juego.
             </p> 
             <p>
-              <audio controls>
+              <audio controls class="audioscroll" >
                 <source src="audio/batalla-chacabuco.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
               </audio>
