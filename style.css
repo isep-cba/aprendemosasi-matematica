@@ -168,6 +168,7 @@ video {
   background: url(img/back-conteo.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
 }
 
