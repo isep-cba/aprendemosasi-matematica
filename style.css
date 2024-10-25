@@ -445,7 +445,8 @@ article {
 /* Position the content inside the overlay */
 .modal-content {
   position: relative;
-  width: 90%; /* 100% width */
+  width: 800px;
+  max-width: 90%; /* 100% width */
   top: 80px;
   height: 800px;
   max-height: 70dvh;
@@ -454,6 +455,7 @@ article {
   margin-top: 60px; /* 30px top margin to avoid conflict with the close button on smaller screens */
   margin: auto;
 }
+
 .modal-content p {
   margin-bottom: 0.5em;
 }
