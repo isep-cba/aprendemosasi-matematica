@@ -90,6 +90,32 @@ audio {
   /* filter:invert(0.4); */
 }
 
+.bullet {
+height: 1em;
+vertical-align: middle;
+margin-right: 8px;
+}
+
+.seccion-video {
+  position: relative;
+}
+
+.titulo-video {
+  position: absolute;
+  top: 2em;
+  right: 0em;
+  border: 2px solid var(--color1);
+  border-radius: 1em 0em 0em 1em;
+  background-color: var(--color3);
+  opacity: 0.8;
+  padding: 1em 1.5em;
+  color: var(--color1);
+  width: 400px;
+  max-width:40vw;
+  max-width: 40vw;
+  font-size: 1.2em;
+  }
+
 #presentacion{
   background-image: url(img/portada-fondo.jpg);
   background-position: center;
@@ -293,6 +319,27 @@ article {
   transition: 2s;
 }
 
+#sticky-thing3 {
+  background-image: url(img/collage-recitar-y-contar.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  transition: 2s;
+}
+
+#sticky-thing4 {
+  background-image: url(img/collage-juan.jpg);
+  background-size: 100%;
+  background-position: 50% 50%;
+  transition: 2s;
+}
+
+#sticky-thing5 {
+  background-image: url(img/collage-coleccion-a-contar.jpg);
+  background-size: 200%;
+  background-position: 0% 100%;
+  transition: 2s;
+}
+
 /* HASTA ACA SE CAMBIAN LAS IMAGENES */
 
 
@@ -326,6 +373,7 @@ article {
   border: 2px solid var(--color1);
   border-radius: 25px;
   transition: 1s;
+  padding: 1.8em;
 }
 
 .step:last-child {
@@ -348,8 +396,8 @@ article {
 
 .step p {
   text-align: left;
-  padding: 1.5em;
   color: var(--color1);
+  margin-bottom: 0.8em;
 }
 
 
@@ -417,7 +465,7 @@ article {
 
 .link-principio {
   font-weight: 800;
-  cursor: help;
+  cursor: pointer;
   margin: 0px;
 }
 
