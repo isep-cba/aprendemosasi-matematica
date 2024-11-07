@@ -197,6 +197,8 @@ video {
   align-items: center;
 }
 
+
+
 #conteo {
   position: relative;
   background: url(img/back-conteo.jpg);
@@ -516,6 +518,11 @@ article {
   margin-bottom: 0.5em;
 }
 
+.modal-content h1 {
+  margin-bottom: 0.5em;
+  color: var(--color1);
+  font-weight: 600;
+}
 
 .modal-box {
   width: 100%;

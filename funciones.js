@@ -18,6 +18,24 @@ function openNav() {
     document.getElementById("mod1").style.height = "0%";
   }
 
+  function openMod2() {
+    document.getElementById("mod2").style.height = "100%";
+  }
+  
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeMod2() {
+    document.getElementById("mod2").style.height = "0%";
+  }
+
+  function openMod3() {
+    document.getElementById("mod3").style.height = "100%";
+  }
+  
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeMod3() {
+    document.getElementById("mod3").style.height = "0%";
+  }
+
 
 
   function openAcercade() {
