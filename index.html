@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fonts/stylesheet.css">
-
     
     <!-- Favicon -->
     <link rel="shortcut icon" href="#">
@@ -44,7 +43,7 @@
 <div id="aviso-giro">
   <div>
     <p>
-      Este recurso fue desarrollado para navegarse en una compu.
+      Gira el dispositivo a horizontal.
     </p>
   </div>
 </div>
@@ -115,13 +114,7 @@
 
     </div> 
 
-      <section id="mapa" class="vh100 mapa" style="display: none;">
-        
-          <figure>
-            <img class="img-fluid" src="img/diagrama.png" alt="">
-          </figure>
-        
-      </section>
+    
 
       <section id="conteo" class="vh100">
         <div class="w50">
@@ -143,71 +136,92 @@
       
       </section>
 
-      <div id="contar-video" class="vh100"> 
-      
-        <video controls loop class="audioscroll vh100">
-          <source src="video/contar-1.mp4">
-        </video>
-  
-      </div> 
+      <section>
+        <div id="contar-video" class="vh100"> 
+        
+          <video controls loop class="audioscroll vh100">
+            <source src="video/contar-1.mp4">
+          </video>
+    
+        </div> 
+    </section>
 
-      
+    <section id="conteo-steps">
 
-      <section id="s1">
-        <div class="scrolly">
-          <div class="sticky-general" id="sticky-thing1">
-            <p></p>
-          </div>
-          
-          <article>
-            <div class="step" style="position: 50% 50%;" data-step="" data-size="200%" data-position="0% 100%">
-              <p>
-                Un niño o una niña que puede recitar la serie hasta un determinado número no necesariamente podrá utilizar ese conocimiento a la hora de contar objetos o dibujos para decir cuántos hay.   
-              </p>
-              <a href="#contar-video"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
-              <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
-              
-            </div>
-            <div class="step" data-step="" data-size="190%" data-position="100% 10%">
-              <p>
-                En el video, vemos que Amaia y Valentina dominan la serie numérica oral, o sea que pueden recitar los números en voz alta, pero dudan sobre cuántos dibujos hay en la carta.
-              </p>
-              <a href="#contar-video"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
-              <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
-            </div>
-            
-            <div class="step" data-step="" data-size="200%" data-position="0% 0%">
-              <p>
-                Ante el desconcierto sobre el valor de dos cartas comparadas, Amaia y Valentina podrían haber decidido contar nuevamente para corroborar iniciando por otro elemento.
-              </p>
-              <p>
-                Por ejemplo, en vez de comenzar por la primera copa de la izquierda arriba, podrían haber iniciado contando desde abajo o contando los dos elementos del medio y luego los restantes.
-              </p>
-              <a href="#contar-video"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
-              <p class="link-principio" onclick="openMod2()"><img src="img/bullet.png" class="bullet" alt="">Principio de indiferencia del orden</p>
-            </div>
-
-            <div class="step" data-step="" data-size="180%" data-position="100% 100%">
-              <p>
-                No obstante, para que los niños y las niñas avancen en el dominio del conteo, es importante, entre otras cuestiones, que conozcan el recitado de la serie numérica, lo que constituye una larga conquista.
-              </p>
-              <p>
-                <audio controls class="audioscroll" id="audioscroll">
-                  <source src="audio/contar-audio1.mp3" type="audio/mpeg">
-                  Your browser does not support the audio tag.
-                </audio>
-              </p>
-              <a href="#contar-video"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
-              
-            </div>
-            <div class="step" data-step="" data-size="100%" data-position="50% 50%"></div>
-
-            </div>
-          </article>
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo01.png" alt="">
         </div>
-      </section>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              Un niño o una niña que puede recitar la serie hasta un determinado número no necesariamente podrá utilizar ese conocimiento a la hora de contar objetos o dibujos para decir cuántos hay.   
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+          </div>
+        </div>
+      </div>
 
-      <section id="conteo" class="vh100">
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo02.png" alt="">
+        </div>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              En el video, vemos que Amaia y Valentina dominan la serie numérica oral, o sea que pueden recitar los números en voz alta, pero dudan sobre cuántos dibujos hay en la carta.
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo03.png" alt="">
+        </div>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              Ante el desconcierto sobre el valor de dos cartas comparadas, Amaia y Valentina podrían haber decidido contar nuevamente para corroborar iniciando por otro elemento.
+            </p>
+            <p>
+              Por ejemplo, en vez de comenzar por la primera copa de la izquierda arriba, podrían haber iniciado contando desde abajo o contando los dos elementos del medio y luego los restantes.
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo04.png" alt="">
+        </div>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              No obstante, para que los niños y las niñas avancen en el dominio del conteo, es importante, entre otras cuestiones, que conozcan el recitado de la serie numérica, lo que constituye una larga conquista.
+            </p>
+            <p>
+              <audio controls class="audioscroll" id="audioscroll">
+                <source src="audio/contar-audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section id="conteo" class="vh100">
         <div class="w50">
           <div class="titulo">
             <img src="img/recitar-icon.png" alt="" style="position: absolute; bottom: 0px; left: 150px; height: 100vh;">
@@ -228,7 +242,7 @@
           </div>
         </div>
       
-      </section>
+    </section>
 
 
     <div id="video-recitar" class="seccion-video vh100"> 
@@ -602,6 +616,23 @@
       </p> 
     </div>
   </div>
+
+    <!-- MODALES VIDEOS -->
+
+
+    <div id="mod-v1" class="modal">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeModV1()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="modal-content">
+      <video controls loop class="audioscroll" style="width: 100%;">
+        <source src="video/contar-1.mp4">
+      </video>
+    </div>
+  </div>
+
+
   
 
 

@@ -88,6 +88,7 @@ a:hover {
   text-decoration: none;
 }
 
+
 p {
   font-size: 1.3em;
 }
@@ -197,15 +198,26 @@ video {
   align-items: center;
 }
 
-
+.fila {
+  position: relative;
+  display: flex;
+}
 
 #conteo {
-  position: relative;
   background: url(img/back-conteo.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
   display: flex;
+}
+
+#conteo-steps {
+  background: linear-gradient(to bottom, rgba(252, 252, 252, 0.788), rgba(230, 230, 230, 0.822)), url(img/back-conteo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .w50 {
@@ -246,11 +258,25 @@ justify-content: center;
   color: var(--color1);
   width: 400px;
   max-width:40vw;
-  max-width: 40vw;
   font-size: 1.2em;
 }
 
 .cajatexto h2 {
+  font-weight: 600;
+}
+
+.cajas-columnas {
+  border: 2px solid var(--color1);
+  border-radius: 1em;
+  background-color: var(--color3);
+  padding: 2em 1.5em;
+  color: var(--color1);
+  width: 500px;
+  max-width:45vw;
+  font-size: 1.2em;
+}
+
+.cajas-columnas h2 {
   font-weight: 600;
 }
 
@@ -476,7 +502,8 @@ article {
 .link-principio {
   font-weight: 800;
   cursor: pointer;
-  margin: 0px;
+  margin-top: .5em;
+  color: var(--color1);
 }
 
 .link-principio:hover {
@@ -500,6 +527,8 @@ article {
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
+
+
 /* Position the content inside the overlay */
 .modal-content {
   position: relative;
@@ -508,7 +537,6 @@ article {
   top: 80px;
   height: 800px;
   max-height: 70dvh;
-  overflow-y: scroll;
   text-align: left; /* Centered text/links */
   margin-top: 60px; /* 30px top margin to avoid conflict with the close button on smaller screens */
   margin: auto;
