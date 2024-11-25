@@ -1,16 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendí Así</title>
+    <link rel="stylesheet" href="conestilo.css">
+    <link rel="stylesheet" href="variables.css">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <link href="styles.css" rel="stylesheet">
-  <script src="scripts.js"></script> 
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
+  <main>
+    <section id="inicio">
+      <div class="container-titulo">
+        <div class="titulo">
+          <img id="marca" src="img/portada-marca.png" alt="">
+          <img id="nena" src="img/portada-nena.png" alt="">
 
+        </div>
+
+        <div class="texto-inicio">
+          <h2>
+            Escenas escolares en foco
+          </h2>
+          <p>
+            En la escuela, cuando los niños y las niñas aprenden a contar, recorren un largo camino de pequeñas y progresivas conquistas. 
+          </p>
+          <p>
+            Este recurso propone observar y analizar las diferentes estrategias que niños y niñas utilizan durante el aprendizaje del conteo. 
+          </p>
+          <p>
+            A la hora de diseñar nuestras estrategias de enseñanza, incorporamos este conocimiento a otros saberes didácticos y pedagógicos. 
+          </p>
+        </div>
+        <div class="botones">
+          <div>
+            <a class="btn-acercade" alt="menu" onclick="openAcercade()">Acerca de</a>
+          </div>
+          <div>
+            <a class="btn-comenzar" href="#intro">Comenzar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="video" id="presentacion-video">
+      <video controls class="audioscroll">
+        <source src="video/01-exterior.mp4">
+      </video>
+    </section>
+
+    <section class="portada" id="portada-elconteo">
+      <div class="container-portada">
+        <div class="titulo">
+          <img src="img/circulo-rosa.png" alt="">
+          <h2>El Conteo</h2>
+        </div>
+        <div class="caja-texto">
+          <h2>
+            “No es el mismo dibujo, pero sí el mismo número”.
+          </h2>
+          <p>
+            Saber recitar la serie no es lo mismo que saber contar los elementos de una colección.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" id="video-elconteo">
+      <video controls loop class="audioscroll">
+        <source src="video/contar-1.mp4">
+      </video>
+    </section>
+
+    <section class="scroll">
+      <div class="container-scroll">
+        <div class="imagen">
+          <img src="img/conteo01.png" alt="">
+        </div>
+        <div class="caja-texto">
+          <p>
+            Un niño o una niña que puede recitar la serie hasta un determinado número no necesariamente podrá utilizar ese conocimiento a la hora de contar objetos o dibujos para decir cuántos hay.   
+          </p>
+          <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+          <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+        </div>
+      </div>
+      
+      <div class="container-scroll">
+        <div class="imagen">
+          <img src="img/conteo02.png" alt="">
+        </div>
+        <div class="caja-texto">
+          <p>
+            Un niño o una niña que puede recitar la serie hasta un determinado número no necesariamente podrá utilizar ese conocimiento a la hora de contar objetos o dibujos para decir cuántos hay.   
+          </p>
+          <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+          <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="recap">
+
+    </section>
+
+    <section class="creditos">
+
+    </section>
+
+  </main>
+
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="audio.js"></script>
+    <script src="funciones.js"></script>
 </body>
 </html>

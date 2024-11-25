@@ -59,6 +59,19 @@
     }
   }
 
+
+  @media screen and (orientation: landscape) {
+    #aviso-giro {
+       display: none;
+     }
+   }
+ 
+   @media screen and (orientation: portrait) {
+     main {
+       display: none;
+     }
+   }
+
 html,
 body {
   word-wrap: break-word;

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Aprendí así a contar</title>
+    <meta name="description" content="Aprendi Así Matemática" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="#">
+
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+
+    <!-- MENU OVERLAY -->
+<div id="myNav" class="overlay" style="z-index: 6;">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#presentacion">Presentacion</a>
+    <a href="#intro">Intro</a>
+    <a href="#mapa">Mapa</a>
+    <a href="#s1">Scroll1</a>
+    <a href="#video2">Video full</a>
+    <a href="#s2">Scroll2</a>
+  </div>
+
+</div>
+
+<!-- MENSAJE PANTALLAS CHICAS -->
+
+
+<div id="aviso-giro">
+  <div>
+    <p>
+      Gira el dispositivo a horizontal.
+    </p>
+  </div>
+</div>
+
+
+
+<!-- CUERPO PRINCIPAL -->
+
+<main>
+
+  <!-- boton MENU -->
+
+  <div style="position: fixed; top: 15px; left: 15px; cursor: pointer; z-index: 2; color: white;";>
+    <!-- Use any element to open/show the overlay navigation menu -->
+     <img src="img/menu.png" alt="menu" onclick="openNav()" style="width: 30px;">
+  
+  </div>
+
+    <section id="presentacion" class="vh100 p2">
+      <div class="flex-container">
+        
+        <div style=" width: 650px;
+        max-width: 70vw;
+        margin: auto;
+        gap: 0.5em;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;">
+
+          <div style="position: relative;">
+            <img src="img/portada-marca.png" style="width: 90%;" alt="">
+            <img src="img/portada-nena.png" style="position: absolute; right: -150px; top: 100px;" alt="">
+          </div>
+          <div style="width: 90%; padding-right: 50px; gap: 2em;">
+            <h3 style="color: var(--color1); font-size: 1.8em; font-weight: 600; line-height: 2em;">Escenas escolares en foco</h3>
+            <p>
+              En la escuela, cuando los niños y las niñas aprenden a contar, recorren un largo camino de pequeñas y progresivas conquistas.
+            </p>
+            <br>
+            <p>
+              Este recurso propone observar y analizar las diferentes estrategias que niños y niñas utilizan durante el aprendizaje del conteo. El objetivo de este material es comprender qué procesos tienen lugar mientras desarrollamos nuestra tarea de enseñanza.
+            </p>
+            <br>
+            <p>
+              Acceder a la producción de estrategias genuinas de los y las estudiantes y conocer cuáles son sus ideas sobre los números nos permite tomar decisiones como docentes y realizar intervenciones adecuadas, oportunas y precisas.
+            </p>
+            <div style="display: flex; justify-items: center; flex-wrap: wrap; justify-content: space-around;">
+              <p>
+                <a class="btn-acercade" alt="menu" onclick="openAcercade()">Acerca de</a>
+              </p>
+              <p>
+                <a class="btn-comenzar" href="#intro">Comenzar</a>
+              </p>  
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <div id="intro" class="vh100"> 
+      
+      <video controls loop class="audioscroll vh100">
+        <source src="video/01-exterior.mp4">
+      </video>
+
+    </div> 
+
+    
+
+      <section id="conteo" class="vh100">
+        <div class="w50">
+          <div class="titulo">
+            <img src="img/conteo-icon.png" alt="" style="position: absolute; bottom: 0px; left: 150px; height: 50vh;">
+            <h1 class="txt-violeta txt-encabezado" style="position: absolute; bottom: 45%; left: 390px;">El conteo</h1>
+          </div>
+        </div>
+        <div class="w50 f-end">
+          <div class="cajatexto">
+            <h2>
+              “No es el mismo dibujo, pero sí el mismo número”.
+            </h2>
+            <p>
+              Saber recitar la serie no es lo mismo que saber contar los elementos de una colección.
+            </p>
+          </div>
+        </div>
+      
+      </section>
+
+      <section>
+        <div id="contar-video" class="vh100"> 
+        
+          <video controls loop class="audioscroll vh100">
+            <source src="video/contar-1.mp4">
+          </video>
+    
+        </div> 
+    </section>
+
+    <section id="conteo-steps">
+
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo01.png" alt="">
+        </div>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              Un niño o una niña que puede recitar la serie hasta un determinado número no necesariamente podrá utilizar ese conocimiento a la hora de contar objetos o dibujos para decir cuántos hay.   
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo02.png" alt="">
+        </div>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              En el video, vemos que Amaia y Valentina dominan la serie numérica oral, o sea que pueden recitar los números en voz alta, pero dudan sobre cuántos dibujos hay en la carta.
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo03.png" alt="">
+        </div>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              Ante el desconcierto sobre el valor de dos cartas comparadas, Amaia y Valentina podrían haber decidido contar nuevamente para corroborar iniciando por otro elemento.
+            </p>
+            <p>
+              Por ejemplo, en vez de comenzar por la primera copa de la izquierda arriba, podrían haber iniciado contando desde abajo o contando los dos elementos del medio y luego los restantes.
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="vh100 fila w50">
+        <div class="titulo">
+          <img src="img/conteo04.png" alt="">
+        </div>
+        <div>
+          <div class="cajas-columnas">
+            <p>
+              No obstante, para que los niños y las niñas avancen en el dominio del conteo, es importante, entre otras cuestiones, que conozcan el recitado de la serie numérica, lo que constituye una larga conquista.
+            </p>
+            <p>
+              <audio controls class="audioscroll" id="audioscroll">
+                <source src="audio/contar-audio1.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+            <p class="link-principio" onclick="openModV1()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+    <section id="conteo" class="vh100">
+        <div class="w50">
+          <div class="titulo">
+            <img src="img/recitar-icon.png" alt="" style="position: absolute; bottom: 0px; left: 150px; height: 100vh;">
+            <h2 class="txt-violeta txt-encabezado" style="position: absolute; bottom: 50%; left: 420px;">Recitar y contar</h2>
+          </div>
+        </div>
+        <div class="w50 f-end">
+          <div class="cajatexto">
+            <h2>
+              ¿Qué saben del recitado estos chicos y estas chicas?
+            </h2>
+            <p>
+              <audio controls class="audioscroll" id="audioscroll">
+                <source src="audio/audio-scroll3.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+          </div>
+        </div>
+      
+    </section>
+
+
+    <div id="video-recitar" class="seccion-video vh100"> 
+      <div class="titulo-video">
+        <p><img class="bullet" src="img/bullet-video.png" alt="">Recitar números para jugar</p>
+      </div>
+      <video controls loop class="audioscroll vh100">
+        <source src="video/recitar-video.mp4">
+      </video>
+
+    </div> 
+
+
+
+    <section id="s2">
+      <div class="scrolly">
+        <div class="sticky-general" id="sticky-thing2">
+          <p></p>
+        </div>
+
+        <article>
+
+          <div class="step" data-step="" data-size="200%" data-position="0% 100%">
+            <p>
+              Algunos niños pequeños de sala de 3 años reconocen, con ayuda de la docente, el inicio de la serie: siempre empezamos a contar desde el uno.
+            </p> 
+            <p>
+              <audio controls class="audioscroll" >
+                <source src="audio/recitar-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+            <a href="#video-recitar"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+
+          </div>
+
+          <div class="step" data-step="" data-size="200%" data-position="100% 100%">
+            <p>
+              Vemos que se aproximan a las palabras-número (designaciones orales de los numerales) de fragmentos de la serie: algunos aún no las dicen convencionalmente, aunque se parecen bastante…
+            <br>
+              Y, como escuchamos, omiten algunos de los números.
+            </p> 
+            <p>
+              <audio controls class="audioscroll" >
+                <source src="audio/recitar-2.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+            <a href="#video-recitar"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+          </div>
+
+          <div class="step" data-step="" data-size="200%" data-position="100% 0%">
+            <p>
+              Otros los dicen convencionalmente y en forma ordenada, pero solo de un tramo de la serie.
+            </p> 
+            <p>
+              <audio controls class="audioscroll" >
+                <source src="audio/recitar-3.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+            <a href="#video-recitar"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+          </div>
+
+          <div class="step" data-step="" data-size="200%" data-position="0% 0%">
+            <p>
+              Este dominio limitado de la serie hace que algunos recurran a reiterar el fragmento conocido de números para poder sostener más tiempo el recitado en el juego de la escondida.
+            </p> 
+            <p>
+              <audio controls class="audioscroll" >
+                <source src="audio/recitar-4.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio>
+            </p>
+            <a href="#video-recitar"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+          </div>
+
+            <div class="step" data-step="" data-size="100%" data-position="50% 50%"></div>
+
+
+        </article>
+      </div>
+    </section>
+
+    <div id="video-hastaquetitulo" class="seccion-video vh100"> 
+      <div class="titulo-video">
+        <p><img class="bullet" src="img/bullet-video.png" alt="">¿Hasta qué número sabés “contar”?</p>
+      </div>
+      <video controls loop class="audioscroll vh100">
+        <source src="video/hastaquenumero-video.mp4">
+      </video>
+
+    </div> 
+
+    <section id="s3">
+      <div class="scrolly">
+        <div class="sticky-general" id="sticky-thing3">
+          <p></p>
+        </div>
+
+        <article>
+
+          <div class="step" data-step="" data-size="200%" data-position="0% 0%">
+            <p>
+              Veamos ahora cómo los niños y niñas recientemente egresados del nivel de Educación Inicial van consolidando su dominio del recitado de los primeros números y afrontando nuevos desafíos al ampliar el recitado de la serie.
+            </p> 
+           
+            <a href="#video-hastaquetitulo"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+
+          </div>
+
+          <div class="step" data-step="" data-size="200%" data-position="100% 100%">
+            <p>
+              Luciana recita convencionalmente los números hasta el dieciséis. Luego, omite algunos cuando intenta llegar hasta el treinta:  17, 22 y el 27. Se detiene en el 28, vuelve para atrás en la serie y reitera los tramos conocidos: 20, 21, 23, 25 y 26.
+            </p> 
+           
+            <a href="#video-hastaquetitulo"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+
+          </div>
+
+
+            <div class="step" data-step="" data-size="100%" data-position="50% 50%"></div>
+
+
+        </article>
+      </div>
+    </section>
+
+    <div id="video-losdedosdejuan" class="seccion-video vh100"> 
+      <div class="titulo-video">
+        <p><img class="bullet" src="img/bullet-video.png" alt="">Los dedos de Juan</p>
+      </div>
+      <video controls loop class="audioscroll vh100">
+        <source src="video/losdedosdejuan-video.mp4">
+      </video>
+
+    </div> 
+
+
+    <!--
+   SCROLLY 4
+    -->
+
+    <section id="s4">
+      <div class="scrolly">
+        <div class="sticky-general" id="sticky-thing4">
+          <p></p>
+        </div>
+
+        <article>
+
+          <div class="step" data-step="" data-size="230%" data-position="0% 0%">
+            <p>
+              Otros niños, para ampliar el recitado de la serie, hacen uso de una conquista importante: su dominio del principio generador de la serie. Retoman su conocimiento de que los números siempre se forman combinando el nombre del “nudo” o números redondos y la sucesión de los dígitos del 1 al 9. 
+            </p> 
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+            <p class="link-principio" onclick="openMod2()"><img src="img/bullet.png" class="bullet" alt="">Principio de cardinalidad</p>
+            <a href="#video-losdedosdejuan"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+
+          </div>
+
+          <div class="step" data-step="" data-size="200%" data-position="100% 100%">
+            <p>
+              Aquí vemos que Stéfano se detiene en el treinta y nueve porque pareciera no disponer del nombre del nudo siguiente. Duda sobre un aspecto del nombre de los números que resulta inicialmente “opaco” para los niños: el vínculo entre las denominaciones orales de las decenas y el dígito correspondiente (cuatro y cuarenta). 
+            </p> 
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+            <p class="link-principio" onclick="openMod2()"><img src="img/bullet.png" class="bullet" alt="">Principio de cardinalidad</p>
+            <a href="#video-losdedosdejuan"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+
+          </div>
+
+          <div class="step" data-step="" data-size="150%" data-position="0% 100%">
+            <p>
+              Otro subconjunto de números que suele ser también menos transparente para los niños es el de los números del once al quince. La dificultad se vincula con que la denominación oral de estos números no da indicios de su posición en la sucesión numérica “hablada”.
+            </p> 
+            <p class="link-principio" onclick="openMod1()"><img src="img/bullet.png" class="bullet" alt="">Principio de adecuación única</p>
+            <p class="link-principio" onclick="openMod2()"><img src="img/bullet.png" class="bullet" alt="">Principio de cardinalidad</p>
+            <a href="#video-losdedosdejuan"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+          </div>
+
+          <div class="step" data-step="" data-size="200%" data-position="100% 0%">
+            <p>
+              Si bien “saber recitar la serie no es lo mismo que saber contar”, el recitado convencional de los números es un largo proceso que se construye a partir pequeños y complejos aprendizajes que sostienen (junto a otros conocimientos) la posibilidad de asignar a cada objeto de la colección contada una y solo una palabra-número en el orden convencional (<span class="link-principio" onclick="openMod1()">Principio de adecuación única</span>) y así poder decir “cuántos hay” (<span class="link-principio" onclick="openMod2()">Principio de cardinalidad</span>).
+            </p> 
+            <a href="#video-losdedosdejuan"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+          </div>
+
+
+            <div class="step" data-step="" data-size="100%" data-position="50% 50%"></div>
+
+
+        </article>
+      </div>
+    </section>
+
+    <section id="conteo" class="vh100">
+      <div class="w50">
+        <div class="titulo">
+          <img src="img/recitar-icon.png" alt="" style="position: absolute; bottom: 0px; left: 150px; height: 100vh;">
+          <h2 class="txt-violeta txt-encabezado" style="position: absolute; bottom: 50%; left: 420px;">Delimitar la colección a contar</h2>
+        </div>
+      </div>
+      <div class="w50 f-end">
+        <div class="cajatexto">
+          <h2>
+            ¿Qué saben estas chicas sobre la colección a contar?
+          </h2>
+          <p>
+            <audio controls class="audioscroll" id="audioscroll">
+              <source src="audio/audio-scroll3.mp3" type="audio/mpeg">
+              Your browser does not support the audio tag.
+            </audio>
+          </p>
+        </div>
+      </div>
+    
+    </section>
+
+
+    <div id="video-coleccionacontar" class="seccion-video vh100"> 
+      <div class="titulo-video">
+        <p><img class="bullet" src="img/bullet-video.png" alt="">¿Cuál es la colección a contar?</p>
+      </div>
+      <video controls loop class="audioscroll vh100">
+        <source src="video/contar-1.mp4">
+      </video>
+
+    </div> 
+
+
+    <!--
+   SCROLLY 5
+    -->
+
+    <section id="s5">
+      <div class="scrolly">
+        <div class="sticky-general" id="sticky-thing5">
+          <p></p>
+        </div>
+
+        <article>
+
+          <div class="step" data-step="" data-size="200%" data-position="0% 100%">
+            <p>
+              Otro desafío es definir qué contar. Ema y Luciana reconocen que las dos cartas a levantar son las que tienen el número 4.  Pero cuando la maestra les pide que verifiquen, Luciana duda sobre qué contar para asegurar que las dos cartas tienen el mismo valor.
+            </p> 
+            <p>
+              Cuando se trata de comparar las dos colecciones, vemos a Luciana dudar sobre cuál es el cardinal a encontrar: ¿el de las dos colecciones comparadas (las dos cartas) o el de cada una (cada carta)?  
+            </p> 
+            <p class="link-principio" onclick="openMod2()"><img src="img/bullet.png" class="bullet" alt="">Principio de cardinalidad</p>
+            <a href="#video-coleccionacontar"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+
+          </div>
+
+          <div class="step" data-step="" data-size="200%" data-position="100% 0%">
+            <p>
+              Ema orienta a Luciana. Se trata de una escena de colaboración cotidiana entre pares que suelen surgir ante desafíos asumidos de modo compartido por los chicos y las chicas cuando proponemos que afronten autónomamente la tarea de validar y argumentar lo que hacen.
+            </p> 
+            
+            <a href="#video-coleccionacontar"> <p class="link-principio"> <img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video </p></a>
+
+          </div>
+
+
+            <div class="step" data-step="" data-size="100%" data-position="50% 50%"></div>
+
+
+        </article>
+      </div>
+    </section>
+
+
+<!-- MENU OVERLAY -->
+<div id="acercade" class="modal" >
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeAcercade()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="modal-content">
+    <h1>Acerca de</h1>
+    <p>
+      “Lo aprendemos así” es una colección de materiales didácticos que tiene como objetivo hacer visibles los procesos de pensamiento, cognitivos e intersubjetivos/sociales, y las estrategias de resolución que los niños y las niñas hacen evidentes mediante las acciones de explicar, narrar, jugar, contar, leer, indagar a partir de una consigna proporcionada con anterioridad.
+    </p>
+    <p>
+      Cada capítulo de esta colección tiene como eje principal un conjunto de registros audiovisuales de escenas escolares. En torno a ellos gravitan otros contenidos expresados en diferentes lenguajes que los precisan, amplían o analizan y que están vinculados tanto con cuestiones conceptuales y procedimentales de la disciplina como con una serie de indicaciones para poder leer en clave pedagógica y didáctica las escenas que se muestran.
+    </p>
+    <p>
+      La colección ofrece múltiples posibilidades de selección, resignificación e implementación en las aulas del nivel de Educación Superior para el tratamiento de cuestiones de orden pedagógico, didáctico y disciplinar.
+    </p>
+    <p>
+      En definitiva, estos materiales proponen reflexionar sobre cómo acompañar a los niños en los procesos de aprendizaje y pretende compartir con futuros/as docentes modos de mirar e interpretar las escenas escolares.
+    </p>
+    <p>
+      "Aprendemos así a contar" es el título de este primer capítulo.
+    </p>
+    <p>
+       Bienvenidos y bienvenidas.
+    </p>
+    
+    </div>
+  
+  </div>
+     
+
+
+   <!-- MODALES PRINCIPIOS -->
+
+
+    
+   
+   <div id="mod1" class="modal">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMod1()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="modal-content">
+      <h1>
+        Principio de adecuación única
+      </h1>
+      <p>
+        El <strong>principio de adecuación única</strong> enuncia que para poder contar se requiere <strong>“asignar a cada uno de los objetos una y solo una palabra-número, respetando al mismo tiempo el orden convencional de la serie”</strong> (Moreno, 2003, p. 96).
+      </p>
+      <p>
+        Pero, a veces, <strong>la mano va más rápido que la boca</strong> "es decir, no pueden establecer una correspondencia término a término entre cada objeto y una palabra-número y, por lo tanto, el resultado del conteo es errado" (Moreno, 2003, p. 96). 
+      </p>
+      <p>
+        En las escenas del video, advertiremos la complejidad de este aprendizaje y condiciones que afectan los desempeños de nuestros estudiantes. Estas condiciones nos convocan a pensar decisiones para el diseño de situaciones de enseñanza que exploren el dominio de este aprendizaje y promuevan su logro.
+      </p> 
+    </div>
+  </div>
+
+  <div id="mod2" class="modal">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMod2()">&times;</a>
+  
+   <!-- Overlay content -->
+    <div class="modal-content">
+      <h1>
+        Principio de cardinalidad
+      </h1>
+      <p>
+        El principio de cardinalidad enuncia otra condición clave en el desarrollo del conteo en los niños y niñas. Este establece que, al terminar de contar una colección, el último número que se dice representa la cantidad total de objetos en esa colección. En el trabajo diario en las salas/aulas podemos observar que, para muchos niños y niñas, esto no es algo inmediato ni obvio: <strong>“Muchos chicos que pueden establecer esa correspondencia</strong> [término a término entre cada objeto y una palabra número]<strong>, al finalizar el conteo parecen desconocer cuántos objetos hay en total.”</strong> (Moreno, 2003, p. 96). 
+      </p>
+      <p>
+        Es decir, pueden recitar correctamente los números asignando una palabra-número a cada objeto, pero al final del proceso, no logran reconocer que el último número enunciado es el que indica "cuántos hay" en total. Esto significa que han completado el recitado numérico, pero no han entendido aún que la última palabra-número tiene un valor especial: es el cardinal que resume todo el conteo. 
+      </p>
+      <p>
+        A la hora de pensar intervenciones desde la enseñanza es importante tener en cuenta que esta idea no siempre es obvia para ellos. Es necesario explorar su dominio entre nuestros estudiantes en situaciones que requieran este saber para poder así diseñar ocasiones para que avancen en su logro. 
+      </p> 
+    </div>
+  </div>
+
+  <div id="mod3" class="modal">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeMod3()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="modal-content">
+      <h1>
+        Principio de indiferencia del orden
+      </h1>
+      <p>
+        El <strong>principio de indiferencia del orden</strong> refiere a otro aprendizaje fundamental en la construcción del conteo. Implica que, sin importar desde qué punto se comience a contar o el recorrido que se elija, la cantidad total de objetos será la misma, siempre y cuando se respete la regla de contar cada elemento una sola vez. Como señalan Gelman y Meck (1983, citado en Moreno, 2003, p. 96) este principio consiste en: <strong>“comprender que el orden en el que se cuenten las unidades (de derecha a izquierda, de izquierda a derecha, de arriba abajo, etcétera) no altera la cantidad”</strong>.
+      </p>
+      <p>
+        Para los niños pequeños, esta es una comprensión clave que les ayuda a consolidar la idea de que los números representan cantidades estables, independientemente del orden en que se cuenten. 
+      </p>
+      <p>
+        A la hora de pensar intervenciones desde la enseñanza es importante tener en cuenta que esta idea no es obvia para ellos. Los niños pueden, por ejemplo, volver a contar desde un nuevo punto de inicio creyendo que cambiará el resultado.
+      </p> 
+    </div>
+  </div>
+
+    <!-- MODALES VIDEOS -->
+
+
+    <div id="mod-v1" class="modal">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeModV1()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="modal-content">
+      <video controls loop class="audioscroll" style="width: 100%;">
+        <source src="video/contar-1.mp4">
+      </video>
+    </div>
+  </div>
+
+
+  
+
+
+
+    </main>
+
+
+    
+
+    <!-- <div class='debug'></div> -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="scrollys.js"></script>
+    <script src="audio.js"></script>
+    <script src="funciones.js"></script>
+
+  </body>
+</html>
