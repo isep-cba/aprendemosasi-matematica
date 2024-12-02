@@ -6,7 +6,6 @@
     font-family: 'Sauna Pro';
   }
 
-html,
 body {
   word-wrap: break-word;
   width: 100vw;
@@ -201,6 +200,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--color3);
 }
 
 .container-scroll {
@@ -356,5 +356,27 @@ li {
     margin-bottom: 0.3em;
 }
 
+.texto-chico {
+    font-size: 0.8em;
+}
 
-  
+.seccion-audio {
+    width: 100%;
+}
+
+.audio-sticky {
+    position: sticky;
+    margin-top:10vh;
+    top: 90%;
+    right: 10px;
+}
+
+.audio-sticky audio {
+    position: absolute;
+    right: 10px;
+    opacity: 0.5;
+}
+
+.audio-sticky audio:hover {
+    opacity: 1;
+}
