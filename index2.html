@@ -82,9 +82,6 @@
         </audio>
       </div>
 
-
-    
-
     <section class="scroll">
       <div class="container-scroll">
         <div class="imagen">
@@ -143,7 +140,96 @@
 
   </div> <!-- Termina audio sticky -->
 
-  
+    <section class="portada" id="portada-recitarycontar">
+      <div class="container-portada">
+        <div class="titulo">
+          <img src="img/circulo-flecha.png" alt="">
+          <h2>Recitar y contar</h2>
+        </div>
+        <div class="caja-texto">
+          <h2>
+            ¿Qué saben del recitado estos chicos y estas chicas?
+          </h2>
+          <audio controls loop class="audioscroll">
+            <source src="audio/ambiente-interior.mp3">
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="video" id="video-elconteo">
+      <div class="titulo-video">
+        <p><img class="bullet" src="img/bullet-video.png" alt="">Recitar números para jugar</p>
+      </div>
+      <video controls loop class="audioscroll">
+        <source src="video/recitar-video.mp4">
+      </video>
+    </section>
+
+    <!-- scroll 2 -->
+    
+    <div class="seccion-audio"> <!-- Inicia sección audio sticky -->
+
+      <div class="audio-sticky">
+        <audio controls loop class="audioscroll">
+          <source src="audio/ambiente-exterior.mp3">
+        </audio>
+      </div>
+
+    <section class="scroll">
+      <div class="container-scroll">
+        <div class="imagen">
+          <img src="img/recitar01.png" alt="">
+        </div>
+        <div class="caja-texto">
+          <p>
+            Algunos niños y niñas de sala de 3 años reconocen, con ayuda de el o la docente, el inicio de la serie: siempre empezamos a contar desde el uno.
+          </p>
+          <p class="link-principio" onclick="openModV2()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+        </div>
+      </div>
+      
+      <div class="container-scroll">
+        <div class="imagen">
+          <img src="img/recitar02.png" alt="">
+        </div>
+        <div class="caja-texto">
+          <p>
+            Vemos que se aproximan a las palabras-número (designaciones orales de los numerales) de fragmentos de la serie: algunos aún no las dicen convencionalmente, aunque se parecen bastante…
+            Y, como escuchamos, omiten algunos de los números.
+          </p>
+          <p class="link-principio" onclick="openModV2()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+        </div>
+      </div>
+
+      <div class="container-scroll">
+        <div class="imagen">
+          <img src="img/recitar03.png" alt="">
+        </div>
+        <div class="caja-texto">
+          <p>
+            Otros los dicen convencionalmente y en forma ordenada, pero solo de un tramo de la serie.
+          </p>
+          <p class="link-principio" onclick="openModV2()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+        </div>
+      </div>
+
+      <div class="container-scroll">
+        <div class="imagen">
+          <img src="img/recitar04.png" alt="">
+        </div>
+        <div class="caja-texto">
+          <p>
+            Este dominio limitado de la serie hace que algunos recurran a reiterar el fragmento conocido de números para poder sostener más tiempo el recitado en el juego de la escondida.
+          </p>
+          <p class="link-principio" onclick="openModV2()"><img src="img/bullet-play.png" class="bullet" alt="">Volver a ver el video</p>
+        </div>
+      </div>
+    </section>
+
+    </div> <!-- Termina audio sticky -->
+
+
 
     <section id="recap" class="seccion-columna-centrada fondo-blanco">
       <div class="container-columna">
@@ -380,6 +466,19 @@
     <div class="modal-content">
       <video controls loop class="audioscroll">
         <source src="video/contar-1.mp4">
+      </video>
+    </div>
+  </div>
+
+
+  <div id="mod-v2" class="modal">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeModV2()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="modal-content">
+      <video controls loop class="audioscroll">
+        <source src="video/recitar-video.mp4">
       </video>
     </div>
   </div>

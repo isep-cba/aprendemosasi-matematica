@@ -46,6 +46,16 @@ function openNav() {
   }
 
 
+  function openModV2() {
+    document.getElementById("mod-v2").style.height = "100%";
+  }
+  
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeModV2() {
+    document.getElementById("mod-v2").style.height = "0%";
+  }
+
+
   function openAcercade() {
     document.getElementById("acercade").style.height = "100%";
   }

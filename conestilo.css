@@ -113,7 +113,28 @@ body {
 .video {
     background-color: var(--color1);
     padding: 0px;
+    position: relative;
 }
+
+.titulo-video {
+    position: absolute;
+    top: 2em;
+    right: 0em;
+    border: 2px solid var(--color1);
+    border-radius: 1em 0em 0em 1em;
+    background-color: var(--color3);
+    opacity: 0.8;
+    padding: 1em ;
+    color: var(--color1);
+    width: 400px;
+    max-width:40vw;
+    max-width: 40vw;
+    font-size: 1.5em;
+    }
+
+.titulo-video p {
+    margin-bottom: 0em;
+        }
 
 @media only screen and (min-width: 750px) {
     .video {
@@ -193,6 +214,17 @@ body {
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+}
+
+#portada-recitarycontar {
+    background: url(img/back-recitarycontar.png);
+    background-position: right;
+    background-color: var(--color3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    font-size: 0.8em;
 }
 
 .scroll {
@@ -366,7 +398,8 @@ li {
 
 .audio-sticky {
     position: sticky;
-    margin-top:10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     top: 90%;
     right: 10px;
 }
@@ -375,6 +408,7 @@ li {
     position: absolute;
     right: 10px;
     opacity: 0.5;
+    width: 250px;
 }
 
 .audio-sticky audio:hover {
