@@ -227,6 +227,17 @@ body {
     font-size: 0.8em;
 }
 
+#portada-delimitarlacoleccion {
+    background: url(img/back-recitarycontar.png);
+    background-position: right;
+    background-color: var(--color3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    font-size: 0.8em;
+}
+
 .scroll {
     display: flex;
     flex-direction: column;
