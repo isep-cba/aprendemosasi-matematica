@@ -96,8 +96,10 @@
   
   
   .modal-content video {
-    width: 100%;
+    max-width: 100%;
+    width: 700px;
     padding: 1em;
+    margin: auto;
   }
 
   
