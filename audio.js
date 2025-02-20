@@ -7,9 +7,9 @@ const audioscroll = document.querySelectorAll(".audioscroll");
 
 
 const options = {
-    root: null,
-    threshold: 0,
-    rootMargin: "-50px",
+    root: document.querySelector("#scrollArea"),
+    rootMargin: "-40px",
+    threshold: 0.6,
 };
 
 const observer = new IntersectionObserver(function(entries, observer) {
