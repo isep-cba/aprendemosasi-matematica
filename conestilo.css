@@ -339,6 +339,10 @@ hr {
     overflow: hidden;
 }
 
+.seccion-logos img {
+    max-height: 3.5em;
+}
+
 
 .fondo-violeta {
     background-color: var(--color1);
