@@ -1,8 +1,7 @@
-// Botones Play/Pause para audios
 
 
 // Pruebas de audio automatico con scroll
-
+const body = document.getElementById(".body");
 const audioscroll = document.querySelectorAll(".audioscroll");
 
 
@@ -31,7 +30,8 @@ function multimediaFoco(entries){
     if(entry.isIntersecting){
         //elemento visible
         audioscroll.play();
-    }else{
+    }
+    else{
         audioscroll.pause();
     }
 }
