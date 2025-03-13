@@ -288,7 +288,18 @@ hr {
     border-radius: 1em;
     font-size: 1.5em;
     border: 1px solid var(--color1);
-    font-weight: 600;
+    font-weight: 500;
+}
+
+#mensaje-scroll {
+    position: absolute;
+    font-size: 1.2em;
+    bottom: 15px;
+    right: 15px;
+}
+#mensaje-scroll img{
+    vertical-align: middle;
+    padding-left: 0.6em;
 }
 
 @media only screen and (max-width: 750px) {
