@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+audio {
+    width: 100%;
+}
+
 hr {
     margin: 3em 0em;
     opacity: 0.5;
@@ -301,6 +305,7 @@ hr {
     font-size: 1.5em;
     border: 1px solid var(--color1);
     font-weight: 500;
+    position: relative;
 }
 
 #mensaje-scroll {
@@ -323,7 +328,7 @@ hr {
     }
   }
 
-.caja-texto .link-principio {
+.caja-texto .link-video {
     cursor: pointer;
     margin-top: .5em;
     color: var(--color1);
@@ -331,10 +336,8 @@ hr {
     font-weight: 500 !important;
 }
   
-.link-principio:hover {
+.link-video:hover {
     color: var(--color2) !important;
-    background-color: var(--color4);
-    transform: scale(1.04);
 }
 
 .bullet {
@@ -342,6 +345,32 @@ hr {
     vertical-align: middle;
     margin-right: 8px;
 }
+
+.caja-principio {
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+    color: white;
+    position: absolute;
+    bottom: -1em;
+    width: 30vw;
+    margin-left: -1.53em;
+    padding: .5em 1.5em;
+    border-radius: 0 0 1em 1em;
+    display: flex;
+    align-items: center;
+}
+
+.link-principio {
+    cursor: pointer;
+    color: var(--color4);
+    font-size: 0.9em;
+    font-weight: 500 !important;
+    margin-bottom: 0.2em;
+}
+  
+.caja-principio:hover {
+    background-color: var(--color2);
+}   
 
 .seccion-columna-centrada {
     display: flex;
