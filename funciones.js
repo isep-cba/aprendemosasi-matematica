@@ -1,3 +1,12 @@
+var videos = document.querySelectorAll('video');
+
+function videoPause() {
+  for(video of videos) { 
+  video.pause();
+  }
+}
+
+
 /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
@@ -18,7 +27,8 @@ function closeNav() {
   function closeMod1() {
     document.getElementById("mod1").style.height = "0%";
     document.getElementById("body").style.overflowY = "scroll";
-  }
+  //document.getElementsByClassName("video-modal") = pause();    
+}
 
   function openMod2() {
     document.getElementById("mod2").style.height = "100%";
