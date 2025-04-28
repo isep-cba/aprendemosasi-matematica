@@ -146,12 +146,13 @@ hr.slashed {
     position: absolute;
     display: none;
     top: 2em;
-    right: 0em;
+    left: 0em;
     border: 2px solid var(--color1);
-    border-radius: 1em 0em 0em 1em;
+    border-radius: 0em 1em 1em 0em;
     background-color: var(--color3);
     opacity: 0.8;
-    padding: 1em ;
+    padding: 1em;
+    padding-left: 2em;
     color: var(--color1);
     width: 400px;
     max-width:40vw;
@@ -188,15 +189,19 @@ hr.slashed {
     justify-content: center;
 }
 
+.container-capitulo {
+    padding-top: -3em;
+}
+
 .titulo-seccion {
     z-index: 2;
+    display: inline-block;
     position: sticky;
-    margin-top: 1em;
+    margin-top: 0em;
     margin-left: 60px;
-    margin-bottom: -2em;
     top: 1em;
     right: 100% !important;
-    background-color: #dddddd66;
+    background-color: #ddddddcc;
     color: var(--color1);
     padding: 15px 20px 5px 20px;
     border-radius: 1.5em;
