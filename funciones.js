@@ -101,6 +101,15 @@ function closeNav() {
     document.getElementById("body").style.overflowY = "scroll";
   }
 
+  function openModV6() {
+    document.getElementById("mod-v6").style.height = "100%";
+    document.getElementById("body").style.overflowY = "hidden";
+  }
+    function closeModV6() {
+    document.getElementById("mod-v6").style.height = "0%";
+    document.getElementById("body").style.overflowY = "scroll";
+  }
+
 
   function openAcercade() {
     document.getElementById("acercade").style.height = "100%";

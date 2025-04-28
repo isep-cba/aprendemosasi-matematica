@@ -194,7 +194,7 @@ hr.slashed {
 }
 
 .titulo-seccion {
-    z-index: 2;
+    z-index: 1;
     display: inline-block;
     position: sticky;
     margin-top: 0em;
