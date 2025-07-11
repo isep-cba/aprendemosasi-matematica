@@ -198,7 +198,7 @@ hr.slashed {
     display: inline-block;
     position: sticky;
     margin-top: 0em;
-    margin-left: 60px;
+    margin-left: 80px;
     top: 1em;
     right: 100% !important;
     background-color: #ddddddcc;
@@ -292,14 +292,21 @@ hr.slashed {
     font-size: 0.8em;
 }
 
-
+@keyframes saltito {
+  0%   {transform: translateY(0px)}
+  50%  {transform: translateY(20px)}
+  100% {transform: translateY(0px);}
+}
 
 #mensaje-scroll {
     position: absolute;
     font-size: 1.2em;
-    bottom: 15px;
-    right: 15px;
+    bottom: 3em;
+    transform-origin: center;
+    margin: auto;
+    animation: saltito 1s infinite;
 }
+
 #mensaje-scroll img{
     vertical-align: middle;
     padding-left: 0.6em;
