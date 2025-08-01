@@ -565,6 +565,14 @@ li {
     transform: scale(1.1);
 }
 
+@media only screen and (min-width: 1200px){
+    #fullscreenbutton {
+      display: none;
+    }
+  }
+
 :fullscreen #fullscreenbutton {
   display: none;
 }
+
+
