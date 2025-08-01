@@ -124,3 +124,21 @@ function closeNav() {
     document.getElementById("acercade").style.height = "0%";
     document.getElementById("body").style.overflowY = "scroll";
   }
+
+
+
+  /* BOTON FULLSCREEN */
+
+  /* Get the documentElement (<html>) to display the page in fullscreen */
+var elem = document.documentElement;
+
+/* View in fullscreen */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}

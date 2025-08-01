@@ -546,3 +546,25 @@ li {
 .audio-sticky audio:hover {
     opacity: 1;
 }
+
+#fullscreenbutton {
+    background-color: #22222277;
+    padding: 5px;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#fullscreenbutton:hover {
+    background-color: #222222dd;
+    transform: scale(1.1);
+}
+
+:fullscreen #fullscreenbutton {
+  display: none;
+}
